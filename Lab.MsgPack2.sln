@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.MsgPack2.Account", "Lab.MsgPack2.Account\Lab.MsgPack2.Account.csproj", "{BE85997A-9A17-4068-9575-AF255C510381}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.MsgPack2.Trading", "Lab.MsgPack2.Trading\Lab.MsgPack2.Trading.csproj", "{F6BC51BA-C9D6-40BA-9855-2534DE45B806}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.MsgPack2.Custody", "Lab.MsgPack2.Custody\Lab.MsgPack2.Custody.csproj", "{349622F7-F3EF-472B-915C-36D40B35EFB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.MsgPack2.AspNetExtensions", "Lab.MsgPack2.AspNetExtensions\Lab.MsgPack2.AspNetExtensions.csproj", "{FE261FFD-E34F-4438-AB69-C1B45FA491D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MsgPack2.Custody.Contracts", "Lab.MsgPack2.Custody.Contracts\Lab.MsgPack2.Custody.Contracts.csproj", "{F83E2166-F0E1-43DC-84AE-B5F67F371B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.MsgPack2.Account.Contracts", "Lab.MsgPack2.Account.Contracts\Lab.MsgPack2.Account.Contracts.csproj", "{68EBEF2D-0DD5-4065-AB8B-B405026A40E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE85997A-9A17-4068-9575-AF255C510381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE85997A-9A17-4068-9575-AF255C510381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE85997A-9A17-4068-9575-AF255C510381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE85997A-9A17-4068-9575-AF255C510381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BC51BA-C9D6-40BA-9855-2534DE45B806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BC51BA-C9D6-40BA-9855-2534DE45B806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BC51BA-C9D6-40BA-9855-2534DE45B806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BC51BA-C9D6-40BA-9855-2534DE45B806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349622F7-F3EF-472B-915C-36D40B35EFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349622F7-F3EF-472B-915C-36D40B35EFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349622F7-F3EF-472B-915C-36D40B35EFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349622F7-F3EF-472B-915C-36D40B35EFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE261FFD-E34F-4438-AB69-C1B45FA491D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE261FFD-E34F-4438-AB69-C1B45FA491D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE261FFD-E34F-4438-AB69-C1B45FA491D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE261FFD-E34F-4438-AB69-C1B45FA491D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83E2166-F0E1-43DC-84AE-B5F67F371B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83E2166-F0E1-43DC-84AE-B5F67F371B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83E2166-F0E1-43DC-84AE-B5F67F371B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83E2166-F0E1-43DC-84AE-B5F67F371B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EBEF2D-0DD5-4065-AB8B-B405026A40E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EBEF2D-0DD5-4065-AB8B-B405026A40E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EBEF2D-0DD5-4065-AB8B-B405026A40E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EBEF2D-0DD5-4065-AB8B-B405026A40E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F8A9F00-0893-4AB6-8274-FF4D9D9414B6}
+	EndGlobalSection
+EndGlobal
