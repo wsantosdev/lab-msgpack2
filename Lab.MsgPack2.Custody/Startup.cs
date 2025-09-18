@@ -32,8 +32,10 @@ namespace Lab.MsgPack2.Custody
             services.AddControllers().AddMvcOptions(options =>
             {
                 options.Filters.Add<ExceptionFilter>();
+
+                options.InputFormatters.Clear();
                 options.InputFormatters.Add(new MessagePackInputFormatterLogger(
-                    new MessagePackInputFormatter(StandardResolver.Options.WithSecurity(MessagePackSecurity.UntrustedData))
+                    new MessagePackInputFormatter(StandardResolver.Options)
                 ));
 
                 options.OutputFormatters.Clear();
