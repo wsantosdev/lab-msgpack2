@@ -3,11 +3,39 @@
 namespace Lab.MsgPack2.Account.Contracts
 {
 
-    [MessagePackObject(true)]
-    public record DepositRequest(decimal Amount);
-    [MessagePackObject(true)]
-    public record WithdrawRequest(decimal Amount);
+    [MessagePackObject]
+    public class DepositRequest
+    {
+        public DepositRequest(decimal amount)
+        {
+            Amount = amount;
+        }
 
-    [MessagePackObject(true)]
-    public record BalanceResponse(decimal Amount);
+        [Key(0)]
+        public decimal Amount { get; init; }
+    }
+
+    [MessagePackObject]
+    public class WithdrawRequest 
+    {
+        public WithdrawRequest(decimal amount)
+        {
+            Amount = amount;
+        }
+
+        [Key(0)]
+        public decimal Amount { get; init; }
+    }
+
+    [MessagePackObject]
+    public class BalanceResponse
+    { 
+        public BalanceResponse(decimal amount)
+        {
+            Amount = amount;
+        }
+
+        [Key(0)]
+        public decimal Amount { get; init; }
+    }
 }

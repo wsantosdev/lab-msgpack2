@@ -40,7 +40,6 @@ namespace Lab.MsgPack2.Account
                 options.OutputFormatters.Add(new MessagePackOutputFormatterLogger(
                     new MessagePackOutputFormatter(StandardResolver.Options)
                 ));
-                options.OutputFormatters.Add(new SystemTextJsonOutputFormatter(new JsonSerializerOptions()));
             });
         }
 

@@ -11,7 +11,6 @@
   "profiles": {
     "Lab.MsgPack2.Custody": {
       "commandName": "Project",
-      "dotnetRunMessages": "true",
       "launchBrowser": false,
       "launchUrl": "",
       "applicationUrl": "https://localhost:5021;http://localhost:5020",

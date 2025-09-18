@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab.MsgPack2.Custody.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,8 +9,8 @@ namespace Lab.MsgPack2.Custody.Models
     {
         private static readonly IDictionary<string, int> _entries = new Dictionary<string, int>();
 
-        public static IEnumerable<dynamic> GetStocks() =>
-            _entries.Select(e => new { Symbol = e.Key, Quantity = e.Value }).ToArray();
+        public static CustodyStockResponse[] GetStocks() =>
+            [.. _entries.Select(e => new CustodyStockResponse(e.Key, e.Value))];
 
         public static void Add(string symbol, int quantity)
         {

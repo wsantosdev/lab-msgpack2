@@ -2,11 +2,42 @@
 
 namespace Lab.MsgPack2.Custody.Contracts
 {
-    [MessagePackObject(true)]
-    public record AddStockRequest(string Symbol, int Quantity);
-    [MessagePackObject(true)]
-    public record RemoveStockRequest(string Symbol, int Quantity);
+    [MessagePackObject]
+    public class AddStockRequest 
+    {
+        public AddStockRequest(string symbol, int quantity)
+        {
+            Symbol = symbol;
+            Quantity = quantity;
+        }
 
-    [MessagePackObject(true)]
-    public record CustodyStockResponse(string Symbol, int Quantity);
+        [Key(0)] public string Symbol { get; init; }
+        [Key(1)] public int Quantity { get; init; }
+    }
+
+    [MessagePackObject]
+    public class RemoveStockRequest
+    {
+        public RemoveStockRequest(string symbol, int quantity)
+        {
+            Symbol = symbol;
+            Quantity = quantity;
+        }
+
+        [Key(0)] public string Symbol { get; init; }
+        [Key(1)] public int Quantity { get; init; }
+    }
+
+    [MessagePackObject]
+    public class CustodyStockResponse
+    {
+        public CustodyStockResponse(string symbol, int quantity)
+        {
+            Symbol = symbol;
+            Quantity = quantity;
+        }
+
+        [Key(0)] public string Symbol { get; init; }
+        [Key(1)] public int Quantity { get; init; }
+    }
 }

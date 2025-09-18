@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Start All",
+    "Projects": [
+      {
+        "Path": "Lab.MsgPack2.Account\\Lab.MsgPack2.Account.csproj",
+        "Action": "Start",
+        "DebugTarget": "Lab.MsgPack2.ContaCorrente"
+      },
+      {
+        "Path": "Lab.MsgPack2.Trading\\Lab.MsgPack2.Trading.csproj",
+        "Action": "Start",
+        "DebugTarget": "Lab.MsgPack2.Trading"
+      },
+      {
+        "Path": "Lab.MsgPack2.Custody\\Lab.MsgPack2.Custody.csproj",
+        "Action": "Start",
+        "DebugTarget": "Lab.MsgPack2.Custody"
+      }
+    ]
+  }
+]

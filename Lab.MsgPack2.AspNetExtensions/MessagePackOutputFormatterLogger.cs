@@ -1,7 +1,10 @@
-﻿using MessagePack.AspNetCoreMvcFormatter;
+﻿using MessagePack;
+using MessagePack.AspNetCoreMvcFormatter;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Primitives;
 using System;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Lab.MsgPack2.AspNetExtensions
@@ -27,7 +30,13 @@ namespace Lab.MsgPack2.AspNetExtensions
 
         public async Task WriteAsync(OutputFormatterWriteContext context)
         {
-            Console.WriteLine($"MessagePack Output Formatter Called on {context.HttpContext.Request.Path}");
+            var messagePack = MessagePackSerializer.Serialize(context.Object, MessagePackSerializerOptions.Standard);
+            var messagePackAsString = Encoding.UTF8.GetString(messagePack);
+
+            var json = JsonSerializer.Serialize(context.Object);
+
+            Console.WriteLine($"MessagePack output on {context.HttpContext.Request.Path}: {messagePackAsString} - {messagePackAsString.Length} bytes");
+            Console.WriteLine($"JSON output on {context.HttpContext.Request.Path}: {json} - {json.Length} bytes");
 
             await _messagePackOutputFormatter.WriteAsync(context);
         }
